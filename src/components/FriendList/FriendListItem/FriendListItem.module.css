@@ -1,5 +1,12 @@
 .avatar{
-    width: 48px;
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    margin-right: 20px;
+    background-color: rgb(236, 219, 219);
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px rgb(0 0 0 / 12%), 1px 2px 2px rgb(0 0 0 / 14%),
+                0px 1px 3px rgb(0 0 0 / 20%);
 }
 
 .status {
@@ -10,7 +17,27 @@
     background-color: red;
 }
 
-/* .active {
+.active {
     composes: status;
     background-color: green;
-} */
+}
+
+.item{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+                0px 2px 1px rgb(0 0 0 / 20%);
+    background-color: rgb(239, 242, 245);
+}
+
+.item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.name {
+font-size: 20px;
+}
